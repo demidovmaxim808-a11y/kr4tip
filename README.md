@@ -11,20 +11,20 @@ React-приложение для конвертации температур м
 
 ## Установка и запуск
 
-```bash
+
 npm install
 npm start
 
 
 ##Скриншоты
 Главный экран приложения
-https://screenshots/1.png
+![Главный экран](./screenshots/1.png) 
 
 Пример конвертации
-https://screenshots/2.png
+![Главный экран](./screenshots/2.png) 
 
 История конвертаций
-https://screenshots/3.png
+![Главный экран](./screenshots/3.png) 
 
 Очистка данных
-https://screenshots/4.png
+![Главный экран](./screenshots/4.png) 
