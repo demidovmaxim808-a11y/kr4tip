@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.converter-container {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  width: 100%;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+p {
+  color: #666;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1rem;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.clear-btn, .clear-history-btn {
+  padding: 12px 24px;
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.clear-btn:hover, .clear-history-btn:hover {
+  background: #ff5252;
+}
+
+.history {
+  border-top: 2px solid #eee;
+  padding-top: 20px;
+}
+
+.history h2 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.history ul {
+  list-style: none;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.history li {
+  background: #f8f9fa;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.conversion {
+  font-weight: 600;
+  color: #333;
+}
+
+.timestamp {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.clear-history-btn {
+  margin-bottom: 15px;
+  background: #ffa726;
+}
+
+.clear-history-btn:hover {
+  background: #ff9800;
+}
+
+/* Адаптивность */
+@media (max-width: 600px) {
+  .converter-container {
+    margin: 10px;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  .history li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+}
